@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Pedro | Portfólio</title>
+    <link rel="icon" type="image/jpg" href="img/jean.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -38,7 +39,6 @@
     <style>
         body { background-color: #080411; }
 
-        /* --- TEXTO RAINBOW ANIMADO --- */
         .rainbow-text {
             background: linear-gradient(to right, #bf00ff, #00ffff, #00ff00, #bf00ff);
             background-size: 200% auto;
@@ -48,7 +48,6 @@
             display: inline-block;
         }
 
-        /* --- AURA DA FOTO (CORRIGIDA E LENTA) --- */
         .profile-aura-container {
             position: relative;
             z-index: 0;
@@ -59,7 +58,6 @@
             z-index: -1;
             inset: -8px;
             border-radius: 9999px;
-            /* Gradiente de cores da marca */
             background: conic-gradient(from 0deg, #00ffff, #bf00ff, #00ffff);
             filter: blur(15px);
             opacity: 0.2;
@@ -69,10 +67,9 @@
         .profile-aura-container:hover::before {
             opacity: 0.7;
             filter: blur(25px);
-            animation-duration: 4s; /* Acelera levemente mas mantém a suavidade */
+            animation-duration: 4s; 
         }
 
-        /* --- AURA DAS TECNOLOGIAS --- */
         .aura-card {
             position: relative;
             z-index: 0;
@@ -101,7 +98,6 @@
         .aura-node::before { background: conic-gradient(from 0deg, #339933, transparent 50%, #339933); }
         .aura-tailwind::before { background: conic-gradient(from 0deg, #06B6D4, transparent 50%, #06B6D4); }
 
-        /* --- LINHA RAINBOW (PROJETOS) --- */
         .outline-rainbow-card {
             position: relative;
             z-index: 0;
