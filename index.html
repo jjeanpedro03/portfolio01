@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Pedro | Portfólio</title>
-    <link rel="icon" type="image/jpg" href="img/jean.jpg">
+    <link rel="icon" type="image/jpg" href="img/rocket.webp">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -21,6 +21,11 @@
                         'cyber-cyan': '#00ffff',
                         'cyber-green': '#00ff00',
                         'cyber-purple': '#bf00ff',
+                        'cyber-yellow': '#ffff00',
+                        'cyber-orange': '#ff7f00',
+                        'cyber-red': '#ff0000',
+                        'cyber-pink': '#ff00ff',
+                        'cyber-white': '#ffffff',
                     },
                     keyframes: {
                         'rotate-border': { '100%': { transform: 'rotate(360deg)' } },
@@ -30,8 +35,8 @@
                         }
                     },
                     animation: {
-                        'rotate-border': 'rotate-border 4s linear infinite',
-                        'text-rainbow': 'text-gradient 4s linear infinite',
+                        'rotate-border': 'rotate-border 3s linear infinite',
+                        'text-rainbow': 'text-gradient 3s linear infinite',
                     },
                 }
             }
@@ -180,8 +185,8 @@
             <div class="text-center md:text-left flex-1">
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-5 text-white tracking-tighter">Jean Pedro</h1>
                 <p class="text-xl md:text-2xl text-slate-300 max-w-2xl mb-8 leading-relaxed">
-                    <span class="rainbow-text font-bold animate-text-rainbow">Desenvolvedor Front End</span>
-                    Focado em JavaScript, TypeScript e React.
+                    <span class="rainbow-text font-bold animate-text-rainbow">Desenvolvedor Full Stack</span>
+                    | Focado em sistemas web escaláveis.
                 </p>
                 <div class="flex gap-6 justify-center md:justify-start items-center">
                     <a href="https://github.com/jjeanpedro03" target="_blank"
@@ -199,7 +204,7 @@
             </div>
 
             <div class="flex-shrink-0 profile-aura-container">
-                <img src="img/jean.jpg" alt="Jean Pedro"
+                <img src="img/jean.png" alt="Jean Pedro"
                     class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl transition-transform duration-700 hover:scale-105">
             </div>
         </header>
@@ -236,6 +241,28 @@
                 <span class="text-cyber-green font-mono"></span> Projetos em Destaque:
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <div class="outline-rainbow-card p-8 group">
+                    <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-cyber-cyan transition-colors">
+                        Views Burger API</h3>
+                    <p class="text-slate-400 mb-8 text-sm leading-relaxed">Sistema de pedidos full-cycle com modelagem relacional, Neon PostgreSQL, regras de negócio e otimização de consultas.</p>
+                    <div class="flex gap-6">
+                        <a href="https://github.com/jjeanpedro03/Views-Burger" target="_blank"
+                            class="font-mono text-xs text-cyber-cyan border-b border-cyber-cyan pb-1 hover:text-white hover:border-white transition-all">GITHUB
+                            REPOSITORY →</a>
+                    </div>
+                </div>
+
+                <div class="outline-rainbow-card p-8 group">
+                    <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-cyber-cyan transition-colors">
+                        Payment Webhook API</h3>
+                    <p class="text-slate-400 mb-8 text-sm leading-relaxed">Gateway de Pagamentos e Webhooks em TypeScript com HMAC SHA-256, idempotência e PostgreSQL.</p>
+                    <div class="flex gap-6">
+                        <a href="https://github.com/jjeanpedro03/payment-webhook-api" target="_blank"
+                            class="font-mono text-xs text-cyber-cyan border-b border-cyber-cyan pb-1 hover:text-white hover:border-white transition-all">GITHUB
+                            REPOSITORY →</a>
+                    </div>
+                </div>
 
                 <div class="outline-rainbow-card p-8 group">
                     <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-cyber-cyan transition-colors">
@@ -291,21 +318,6 @@
                         <a href="https://github.com/jjeanpedro03/Logistica360" target="_blank"
                             class="font-mono text-xs text-cyber-cyan border-b border-cyber-cyan pb-1 hover:text-white hover:border-white transition-all">GITHUB
                             REPOSITORY →</a>
-                    </div>
-                </div>
-
-                <div class="outline-rainbow-card p-8 group">
-                    <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-cyber-cyan transition-colors">
-                        Simulador Financeiro</h3>
-                    <p class="text-slate-400 mb-8 text-sm leading-relaxed">Cálculo de empréstimos focado em lógica de
-                        programação.</p>
-                    <div class="flex gap-6">
-                        <a href="https://github.com/jjeanpedro03/simulador-emprestimo" target="_blank"
-                            class="font-mono text-xs text-cyber-cyan border-b border-cyber-cyan pb-1 hover:text-white hover:border-white transition-all">GITHUB
-                            REPOSITORY →</a>
-                        <a href="https://simulador-emprestimo-orcin.vercel.app/" target="_blank"
-                            class="font-mono text-xs text-cyber-green border-b border-cyber-green pb-1 hover:text-white hover:border-white transition-all">LIVE
-                            DEMO →</a>
                     </div>
                 </div>
 
